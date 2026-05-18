@@ -8,3 +8,4 @@ sqlalchemy
 pymysql
 jupyter 
 mysql.connector
+plotly.express as px
