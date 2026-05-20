@@ -10,7 +10,13 @@ Este proyecto realiza un análisis exploratorio de datos (EDA) sobre un conjunto
 - **Dashboard Interactivo**: Una aplicación web creada con Streamlit que permite visualizar los resultados del análisis a través de métricas y gráficos interactivos.
 - **Persistencia en Base de Datos**: Uso de SQLAlchemy para gestionar la conexión y la carga de datos en una base de datos relacional.
 
-## 📂 Estructura del Proyecto
+## � Fuente de Datos
+
+El conjunto de datos utilizado en este proyecto proviene de Kaggle y contiene información sobre más de 600,000 canciones de Spotify, abarcando desde 1921 hasta 2020.
+
+- **[Spotify Dataset 1921-2020, 600k+ Tracks](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks)**
+
+## �📂 Estructura del Proyecto
 
 ```
 proyecto_mod_2/
@@ -133,6 +139,20 @@ streamlit run streamlit_app/app.py
 ```
 
 Esto abrirá una nueva pestaña en tu navegador con el dashboard interactivo.
+
+## 📜 Conclusiones del EDA
+
+El análisis exploratorio de datos reveló varias tendencias y relaciones interesantes en los datos de Spotify:
+
+1.  **Evolución de la Energía Musical**: A lo largo de los años, se observa una tendencia general al aumento en la "energí­a" de las canciones, aunque con fluctuaciones. Esto podrí­a indicar un cambio en las preferencias de producción y consumo musical hacia pistas más enérgicas.
+
+2.  **Bailabilidad y Popularidad**: Existe una correlación positiva, aunque no extremadamente fuerte, entre la "bailabilidad" y la "popularidad" de una canción. Las canciones más bailables tienden a ser más populares, pero este no es un factor determinante para todas las pistas exitosas.
+
+3.  **Matriz de Correlaciones**:
+    *   La **popularidad** muestra una correlación positiva débil con la **bailabilidad** y la **energí­a**.
+    *   Se encontró una correlación positiva moderada entre la **energí­a** y la **bailabilidad**, así­ como entre la **valencia** (positividad) y la **energí­a** y **bailabilidad**.
+
+4.  **Distribución de la Popularidad**: La mayorí­a de las canciones en el conjunto de datos tienen un í­ndice de popularidad bajo (entre 0 y 20), con un número decreciente de canciones a medida que aumenta la popularidad. Esto sugiere que solo un pequeño número de pistas alcanza altos niveles de popularidad.
 
 ## 💻 Tecnologías Utilizadas
 
